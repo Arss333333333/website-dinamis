@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Lipii❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Added background music audio element -->
+    <audio id="backgroundMusic" loop autoplay>
+        <!-- Ganti src dengan link file audio Anda -->
+        <!-- Contoh: <source src="birthday-song.mp3" type="audio/mpeg"> -->
+        <!-- Atau gunakan link hosting audio seperti: -->
+        <!-- <source src="https://example.com/your-audio-file.mp3" type="audio/mpeg"> -->
+        <source src="Paramore_ The Only Exception [OFFICIAL VIDEO].mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <!-- Main Page -->
+    <div id="mainPage" class="page active">
+        <div class="background-hearts"></div>
+        <div class="container">
+            <h1 class="main-title">
+                Happy Birthday, <span class="name">Lipii</span> ❤️
+            </h1>
+            <p class="subtitle">Selamat Ulang tahun yang ke 18 taun,semoga kamu suka ya dengan hal yang aku buat ini,kurang effort gimana coba,di coding pake hati ini mah😏</p>
+            
+            <div class="button-container">
+                <button class="menu-btn" onclick="showPage('gamePage')">
+                    <span class="btn-icon">🎮</span>
+                    <span class="btn-text">Game</span>
+                </button>
+                <button class="menu-btn" onclick="showPage('giftPage')">
+                    <span class="btn-icon">🎁</span>
+                    <span class="btn-text">Hadiah</span>
+                </button>
+                <button class="menu-btn" onclick="showPage('surprisePage')">
+                    <span class="btn-icon">🎉</span>
+                    <span class="btn-text">Pesan</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div id="gamePage" class="page">
+        <div class="container">
+            <button class="back-btn" onclick="showPage('mainPage')">← Kembali</button>
+            <!-- Updated game title and structure for Tetris -->
+            <h2 class="page-title">Game Tetris Mini ✨</h2>
+            <p class="game-instruction">Susun balok-balok yang jatuh,Kalo bisa aku kasih hadiah deh,tapi kyk nya gabisa</p>
+            
+            <div class="tetris-container">
+                <div class="game-info">
+                    <div class="score">Score: <span id="score">0</span></div>
+                    <div class="level">Level: <span id="level">1</span></div>
+                    <div class="lines">Lines: <span id="lines">0</span></div>
+                </div>
+                <canvas id="tetrisCanvas" width="300" height="600"></canvas>
+                <div class="game-controls">
+                    <button id="startBtn" onclick="startTetris()">Mulai Game</button>
+                    <button id="pauseBtn" onclick="pauseTetris()" disabled>Pause</button>
+                    <div class="control-instructions">
+                        <p>Kontrol:</p>
+                        <p>← → : Gerak kiri/kanan</p>
+                        <p>↓ : Turun cepat</p>
+                        <p>↑ : Putar</p>
+                        <p class="mobile-instruction">📱 Mobile: Geser layar untuk kontrol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gift Page -->
+    <div id="giftPage" class="page">
+        <div class="container">
+            <button class="back-btn" onclick="showPage('mainPage')">← Kembali</button>
+            <h2 class="page-title">Pilih Hadiahmu! 🎁</h2>
+            <p class="page-subtitle">Ada 3 kotak hadiah misterius untukmu</p>
+            
+            <div class="gift-container">
+                <div class="gift-box" onclick="openGift(0)">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body"></div>
+                    <div class="gift-ribbon"></div>
+                </div>
+                <div class="gift-box" onclick="openGift(1)">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body"></div>
+                    <div class="gift-ribbon"></div>
+                </div>
+                <div class="gift-box" onclick="openGift(2)">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body"></div>
+                    <div class="gift-ribbon"></div>
+                </div>
+            </div>
+            
+            <div id="giftMessage" class="gift-message"></div>
+        </div>
+    </div>
+
+    <!-- Surprise Page -->
+    <div id="surprisePage" class="page">
+        <div class="container">
+            <button class="back-btn" onclick="showPage('mainPage')">← Kembali</button>
+            <h2 class="page-title">Pesan Dari Aku 🎉</h2>
+            
+            <div class="surprise-message">
+                <p class="birthday-wish">Selamat Ulang Tahun! ✨</p>
+                <p class="birthday-text">Semoga semua impianmu bisa tercapai dan hari-harimu selalu dipenuhi kebahagiaan!,aku harap sifat dan sikap kamu semakin dewasa dan semakin ngerti apa yang terjadi,aku harap kamu selalu bareng aku,tapi yaudah lah kamu nya juga sombong sekarang mah😏,kamu tuh kalo ada masalah tuh ceritaaa,jangan diem diem muluu itu ngebuat aku herann tau gakk🙄🙄,kita selesain bareng barengg,tapi yaudah lah aku gabisa ngatur cuman aku berharap seperti itu,semoga kamu suka dengan hadiah pertama dari akuu ini,memang ga seberapa tapi semoga ini bisa menjadi hal yang baru bagi kamuu dan bisa jadi hal yang gak bisa di lupain,dan semoga setelah baca pesan ini kamu bisa menjadi lebih mengerti tentang kita dan semoga pola pikir kamu bisa menjadi lebih dewasa,maafin aku kalo pernah buat kamu sakit hati,maaf kalo aku banyak kurang nya,tapi di balik itu semua aku selalu berusaha semaksimal mungkin agar bisa sempurna di depan kamuu,hadiah yang lain nya nyusul yahh ntar</p>
+            </div>
+            
+            <div class="photo-gallery">
+                <h3>Foto siapaa yaa inii🤭📸</h3>
+                <!-- Edit bagian ini: ganti dengan foto-foto masa kecil atau kenangan bersama -->
+               <div class="photo-item">
+                    <img src="lipikecil1.jpg" alt="Kenangan 1">
+                    <p>Alip versi kecill ini teh yaaa,duluu masihh imutt,sekarang tambah imutt☺️</p>
+                </div>
+                <div class="photo-item">
+                    <img src="lipikecil2.jpg" alt="Kenangan 2">
+                    <p>Pasti Kamu penasaran aku dapet darimana🤭,udah tenang aja aku doang kok yang tauu☝🏻</p>
+                </div>
+                <div class="photo-item">
+                    <p>Foto nya boleh requset wa aja</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Game Result -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <h3>💕</h3>
+            <h3>IHH CUPU BANGET KALAH</h3>
+            <p>Walaupun kamu kalah di sini, tapi kamu selalu menang di hati aku ❤️</p>
+            <button onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
